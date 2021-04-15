@@ -22,7 +22,7 @@ bot = commands.Bot(command_prefix=['stream ', 'Stream ', 'stream', 'Stream'], se
 
 @bot.event
 async def on_ready():
-    print("Bot is ready!")
+    print("Streaming status started!")
     await bot.change_presence(activity=discord.Streaming(name="@water1597 on tiktok is sooooooo cool :)", url="https://www.youtube.com/watch?v=hIYiovihEeU"))
 # THIS ONLY WORKS WITH TWITCH AND YOUTUBE LINKS!
 
