@@ -3,7 +3,7 @@
 # https://github.com/WaterTheDev/Discord-Streaming-Status
 import os
 
-os.system("python -m pip install discord") # some mfs dont have pip installed lmfao
+os.system("pip install discord") # some mfs dont have pip installed lmfao
 os.system("cls") # dont call me dumb if u use linux
 
 # dont change these credits cuz the tool is under MIT license :)
