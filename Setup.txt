@@ -1,0 +1,13 @@
+Here is the simple setup:
+First up install python from Python.org
+Second of all Setup the config.json here is a example:
+{
+    "token": "mfa.y18ofof8&DHf8o87g8b2h3brfdosuhgrgerBFAsTGAw1R7oKZONfLCiIsFIAFqLASGcTlUNk6h5qlCJ", 
+    "streamurl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "prefix": "$",
+}
+
+And last of all run the main.py!
+
+If you have any errors just message:
+Water#9950
