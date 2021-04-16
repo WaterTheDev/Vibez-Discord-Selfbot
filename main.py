@@ -41,50 +41,55 @@ async def on_ready():
 
 @bot.command(aliases=["streaming"])
 async def stream(ctx, *, message):
-    await ctx.message.delete()
-    print("Status Changed.")
-    stream = discord.Streaming(
-        name=message,
-        url=streamurl,
-    )
-    await bot.change_presence(activity=stream)
+    if ctx.message.author.id == bot.user.id:
+        await ctx.message.delete()
+        print("Status Changed.")
+        stream = discord.Streaming(
+            name=message,
+            url=streamurl,
+        )
+        await bot.change_presence(activity=stream)
 
 @bot.command(aliases=["playing"])
 async def game(ctx, *, message):
-    await ctx.message.delete()
-    print("Status Changed.")
-    game = discord.Game(
-        name=message
-    )
-    await bot.change_presence(activity=game)
+    if ctx.message.author.id == bot.user.id:
+        await ctx.message.delete()
+        print("Status Changed.")
+        game = discord.Game(
+            name=message
+        )
+        await bot.change_presence(activity=game)
                    
 @bot.command(aliases=["listen"])
 async def listening(ctx, *, message):
-    await ctx.message.delete()
-    print("Status Changed.")
-    await bot.change_presence(
-        activity=discord.Activity(
-            type=discord.ActivityType.listening,
-            name=message,
-        ))
+    if ctx.message.author.id == bot.user.id:
+        await ctx.message.delete()
+        print("Status Changed.")
+        await bot.change_presence(
+            activity=discord.Activity(
+                type=discord.ActivityType.listening,
+                name=message,
+            ))
 
 @bot.command(aliases=["watch"])
 async def watching(ctx, *, message):
-    await ctx.message.delete()
-    print("Status Changed.")
-    await bot.change_presence(
-        activity=discord.Activity(
-            type=discord.ActivityType.watching,
-            name=message
-        ))
+    if ctx.message.author.id == bot.user.id:
+        await ctx.message.delete()
+        print("Status Changed.")
+        await bot.change_presence(
+            activity=discord.Activity(
+                type=discord.ActivityType.watching,
+                name=message
+            ))
 
 # do streamstop to stop the fake stream
 @bot.command(aliases=["stop", "reset"])
 async def close(ctx):
-    await ctx.message.delete()
-    await bot.change_presence(activity=None, status=discord.Status.dnd)
-    print("Status reset")
-    time.sleep(10)
+    if ctx.message.author.id == bot.user.id:
+        await ctx.message.delete()
+        await bot.change_presence(activity=None, status=discord.Status.dnd)
+        print("Status reset")
+        time.sleep(10)
 
 @bot.command()
 async def help(ctx):
