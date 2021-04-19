@@ -35,7 +35,7 @@ bot.remove_command('help')
 
 @bot.event
 async def on_ready():
-    print("Streaming status started!")
+    print("Vibez Selfbot started!")
     print("Prefix: "+ prefix)
 # THIS ONLY WORKS WITH TWITCH AND YOUTUBE LINKS!
 
