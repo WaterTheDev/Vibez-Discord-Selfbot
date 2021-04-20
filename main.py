@@ -3,7 +3,7 @@
 # https://github.com/WaterTheDev/Discord-Streaming-Status
 import os
 
-os.system("pip install discord") # some mfs dont have pip installed lmfao
+os.system("pip install discord.py") # some mfs dont have pip installed lmfao
 os.system("cls") # dont call me dumb if u use linux
 
 # dont change these credits cuz the tool is under MIT license :)
@@ -14,7 +14,7 @@ os.system("title " + "Made by water1597 on TikTok [-] https://github.com/WaterTh
 # change what ever the fuck u want under here just nothing from up here :)
 
 
-import discord
+import discord.py
 from discord.ext import commands
 import time
 import json
