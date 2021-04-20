@@ -2,6 +2,6 @@
 {
     "token": "Set token here :)",
     "streamurl": "Set Twitch/Youtube link here.",
-    "prefix": "$"
+    "prefix": "$",
     "auto_enable_message_sniper_on_start": "True"
 }
