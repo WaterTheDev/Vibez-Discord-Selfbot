@@ -14,7 +14,7 @@ os.system("title " + "Made by water1597 on TikTok [-] https://github.com/WaterTh
 # change what ever the fuck u want under here just nothing from up here :)
 
 
-import discord.py
+import discord
 from discord.ext import commands
 import time
 import json
