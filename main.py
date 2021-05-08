@@ -29,8 +29,6 @@ streamurl = config.get('streamurl')
 
 bot = commands.Bot(command_prefix=prefix, self_bot=True)
 
-bot.msgsniper = auto_enable_message_sniper_on_start
-
 
 # THIS ONLY WORKS WITH TWITCH AND YOUTUBE LINKS!
 # THIS ONLY WORKS WITH TWITCH AND YOUTUBE LINKS!
