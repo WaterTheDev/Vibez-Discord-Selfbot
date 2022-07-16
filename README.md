@@ -6,4 +6,4 @@ For the setup open setup.txt!
 
 Its pretty simple.
 
-![bruh](https://user-images.githubusercontent.com/77400470/115043961-096e1800-9ea3-11eb-957a-19abaad86d6d.PNG)
+![bruh](https://i.ibb.co/jMPs9xP/image.png)
