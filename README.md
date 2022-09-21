@@ -7,3 +7,5 @@ For the setup open setup.txt!
 Its pretty simple.
 
 ![bruh](https://i.ibb.co/jMPs9xP/image.png)
+
+No support will be provided any longer for this project.
